@@ -18,8 +18,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev": "npm-run-all start",
-    "watch:sass": "sass --watch src/sass/style.scss src/css/style.css"
+    "watch:sass": "sass --watch src/sass/style.scss src/css/style.css",
+    "dev": "npm-run-all -p -r start watch:sass"
   },
   "eslintConfig": {
     "extends": [
