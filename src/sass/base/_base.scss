@@ -1,0 +1,29 @@
+html {
+  box-sizing: border-box; // Border-box is always good
+  font-size: 62.5%; // 1rem = 10px, 10px / 16px = 62.5%
+
+  textarea,
+  input,
+  textarea:focus,
+  input:focus {
+    outline: none;
+  }
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; // Now everything will inherit border-box from html above
+}
+
+body {
+  // Set the default font styles, colors, etc.
+  background-color: #4a3331;
+  // background-image: $background-pattern;
+}
+
+.App {
+  padding: 4rem;
+}
