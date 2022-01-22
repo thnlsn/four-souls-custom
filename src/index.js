@@ -2,9 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
 import './css/style.css';
-import './assets/fonts/Font_soulsV2_Body-Regular.ttf';
+//import './assets/fonts/Font_soulsV2_Body-Regular.ttf';
 
 ReactDOM.render(
   <React.StrictMode>

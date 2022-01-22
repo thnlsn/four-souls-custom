@@ -1,8 +1,9 @@
 @font-face {
   font-family: "Body";
-  src: local("Font_soulsV2_Body-Regular"), url("./assets/fonts/Font_soulsV2_Body-Regular.tff") format("truetype");
+  src: local("Font_soulsV2_Body-Regular"), url("../assets/fonts/Font_soulsV2_Body-Regular.ttf") format("truetype");
 }
-p {
+p,
+div {
   font-family: "Body";
 }
 
