@@ -1,3 +1,35 @@
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+html textarea,
+html input,
+html textarea:focus,
+html input:focus {
+  outline: none;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #493331;
+}
+
+.App {
+  padding: 4rem;
+}
+
 @font-face {
   font-family: "Body";
   src: local("Font_soulsV2_Body-Regular"), url("../assets/fonts/Font_soulsV2_Body-Regular.ttf") format("truetype");

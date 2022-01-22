@@ -1,3 +1,5 @@
+@use '../abstracts/variables' as variables;
+
 html {
   box-sizing: border-box; // Border-box is always good
   font-size: 62.5%; // 1rem = 10px, 10px / 16px = 62.5%
@@ -20,7 +22,7 @@ html {
 
 body {
   // Set the default font styles, colors, etc.
-  background-color: #4a3331;
+  background-color: variables.$background;
   // background-image: $background-pattern;
 }
 
