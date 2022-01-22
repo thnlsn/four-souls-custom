@@ -23,7 +23,7 @@ html input:focus {
 }
 
 body {
-  background-color: #493331;
+  background-color: #171717;
 }
 
 .App {
@@ -31,13 +31,21 @@ body {
 }
 
 @font-face {
+  font-family: "Title";
+  src: local("Font_soulsV2_Title-Regular"), url("../assets/fonts/Font_soulsV2_Title-Regular.ttf") format("truetype");
+}
+@font-face {
   font-family: "Body";
   src: local("Font_soulsV2_Body-Regular"), url("../assets/fonts/Font_soulsV2_Body-Regular.ttf") format("truetype");
 }
-p,
-div {
+.font-title {
+  font-family: "Title";
+  font-size: 2.4rem;
+}
+
+.font-body {
   font-family: "Body";
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 /*# sourceMappingURL=style.css.map */

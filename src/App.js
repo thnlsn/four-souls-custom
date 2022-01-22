@@ -1,7 +1,12 @@
 //* Imports
 
 function App() {
-  return <div className='App'>TEST TEST TEST</div>;
+  return (
+    <div className='App'>
+      <div className='font-title'>Title</div>
+      <div className='font-body'>Body</div>
+    </div>
+  );
 }
 
 // App level will have header, content, footer
