@@ -24,6 +24,7 @@ html input:focus {
 
 body {
   background-color: #171717;
+  color: var(--color-white);
 }
 
 .App {
