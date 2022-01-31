@@ -3,8 +3,9 @@
 function App() {
   return (
     <div className='App'>
-      <div className='font-title'>Title</div>
-      <div className='font-body'>Body</div>
+      <div className='font-title header'>Header</div>
+      <div className='font-body content'>Content</div>
+      <div className='font-body footer'>Footer</div>
     </div>
   );
 }
