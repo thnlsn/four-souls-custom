@@ -22,11 +22,33 @@ html {
 
 body {
   // Set the default font styles, colors, etc.
-  background-color: variables.$background-black;
+  background-color: var(--color-black);
   color: var(--color-white);
-  // background-image: $background-pattern;
+  //background-image: $background-pattern;
+  //display: flex;
+  //justify-content: center;
+  border-image-source: url('https://foursouls.com/wp-content/uploads/2021/08/FourSoulsPageBorderV5.png');
+  border-image-width: 156px 104px;
+  border-image-repeat: stretch repeat;
+  border-image-slice: 156 104 156 fill;
+  //padding: 50px 128px 124px 128px;
+  overflow: hidden;
+  //image-rendering: pixelated;
+  //image-rendering: -moz-crisp-edges;
+  //image-rendering: crisp-edges;
+  //margin-bottom: 80px;
+  width: 100vw;
+  min-height: 100vh;
 }
 
 .App {
-  padding: 4rem;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 11.5rem 12rem;
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(2px);
+}
+
+.overlay {
+  background-color: variables.$background-black;
 }
