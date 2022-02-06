@@ -20,27 +20,29 @@ html {
   box-sizing: inherit; // Now everything will inherit border-box from html above
 }
 
+//? LOCAL VARIABLES
+$negativeMargin: 2rem;
+
 body {
   // Set the default font styles, colors, etc.
   background-color: var(--color-black);
   color: var(--color-white);
   border-image-source: url('https://foursouls.com/wp-content/uploads/2021/08/FourSoulsPageBorderV5.png');
-  border-image-width: 156px 104px;
+  border-image-width: 156px 104px; //! Remove this at really thin viewports
   border-image-repeat: stretch repeat;
   border-image-slice: 156 104 156 fill;
   overflow: hidden;
-  width: 100vw;
-  min-height: 100vh;
+  width: calc(100vw + ($negativeMargin * 2));
+  min-height: calc(100vh + ($negativeMargin * 2));
+  margin: -$negativeMargin;
 }
 
 .App {
-  width: 100vw;
-  min-height: 100vh;
-  padding: 11.5rem 12rem;
-  background: rgba(0, 0, 0, 0.25);
+  width: calc(100vw + ($negativeMargin * 2));
+  min-height: calc(100vh + ($negativeMargin * 2));
+  background: #2b1e1d40;
   backdrop-filter: blur(2px);
-}
+  padding: 11.5rem 12rem;
 
-.overlay {
-  background-color: variables.$background-black;
+  text-shadow: 2px 2px var(--color-black);
 }

@@ -30,20 +30,18 @@ body {
   border-image-repeat: stretch repeat;
   border-image-slice: 156 104 156 fill;
   overflow: hidden;
-  width: 100vw;
-  min-height: 100vh;
+  width: calc(100vw + 4rem);
+  min-height: calc(100vh + 4rem);
+  margin: -2rem;
 }
 
 .App {
-  width: 100vw;
-  min-height: 100vh;
-  padding: 11.5rem 12rem;
-  background: rgba(0, 0, 0, 0.25);
+  width: calc(100vw + 4rem);
+  min-height: calc(100vh + 4rem);
+  background: #2b1e1d40;
   backdrop-filter: blur(2px);
-}
-
-.overlay {
-  background-color: #171717;
+  padding: 11.5rem 12rem;
+  text-shadow: 2px 2px var(--color-black);
 }
 
 @font-face {
