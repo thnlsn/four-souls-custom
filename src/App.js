@@ -1,7 +1,19 @@
 //* Imports
+import logo from './assets/images/FourSoulsLogo.png';
 
 function App() {
-  return <div className='App'></div>;
+  return (
+    <div className='App'>
+      <div className='title'>
+        <img
+          src={logo}
+          alt='The Binding of Isacc: Four Souls'
+          className='title__logo'
+        />
+        <div className='title__name'>Custom Card Creator</div>
+      </div>
+    </div>
+  );
 }
 
 // App level will have header, content, footer
