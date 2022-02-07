@@ -1,13 +1,7 @@
 //* Imports
 
 function App() {
-  return (
-    <div className='App'>
-      {/* <div className='font-title header'>Header</div> */}
-      <div className='font-body content'>Content</div>
-      {/* <div className='font-body footer'>Footer</div> */}
-    </div>
-  );
+  return <div className='App'></div>;
 }
 
 // App level will have header, content, footer
@@ -17,3 +11,9 @@ export default App;
 
 //? EXTRA ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //? We should allow a toggle for bleedzones
+
+/*
+      <div className='font-title header'>Header</div>
+      <div className='font-body content'></div>
+      <div className='font-body footer'>Footer</div>
+*/
