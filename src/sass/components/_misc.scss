@@ -1,0 +1,17 @@
+@use '../abstracts/variables' as variables;
+
+.app-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -6.5rem;
+
+  &__logo {
+    width: 40rem;
+    // z-index: 10;
+  }
+  &__title {
+    margin-top: -4.2rem;
+  }
+}

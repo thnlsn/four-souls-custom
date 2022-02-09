@@ -31,7 +31,7 @@ body {
   border-image-width: 156px 104px; //! Remove this at really thin viewports
   border-image-repeat: stretch repeat;
   border-image-slice: 156 104 156 fill;
-  overflow: hidden;
+  //overflow: hidden;
   width: calc(100vw + ($negativeMargin * 2));
   min-height: calc(100vh + ($negativeMargin * 2));
   margin: -$negativeMargin;
@@ -43,6 +43,4 @@ body {
   background: #2b1e1d40;
   backdrop-filter: blur(2px);
   padding: 11.5rem 12rem;
-
-  text-shadow: 2px 2px var(--color-black);
 }

@@ -4,13 +4,13 @@ import logo from './assets/images/FourSoulsLogo.png';
 function App() {
   return (
     <div className='App'>
-      <div className='title'>
+      <div className='app-header'>
         <img
           src={logo}
           alt='The Binding of Isacc: Four Souls'
-          className='title__logo'
+          className='app-header__logo'
         />
-        <div className='title__name'>Custom Card Creator</div>
+        <div className='app-header__title'>Custom Card Maker</div>
       </div>
     </div>
   );

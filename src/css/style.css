@@ -29,7 +29,6 @@ body {
   border-image-width: 156px 104px;
   border-image-repeat: stretch repeat;
   border-image-slice: 156 104 156 fill;
-  overflow: hidden;
   width: calc(100vw + 4rem);
   min-height: calc(100vh + 4rem);
   margin: -2rem;
@@ -41,7 +40,6 @@ body {
   background: #2b1e1d40;
   backdrop-filter: blur(2px);
   padding: 11.5rem 12rem;
-  text-shadow: 2px 2px var(--color-black);
 }
 
 @font-face {
@@ -60,6 +58,28 @@ body {
 .font-body {
   font-family: "Body";
   font-size: 1.6rem;
+}
+
+.app-header__title {
+  font-family: "Title";
+  font-size: 3.4rem;
+  color: #d4bda5;
+  text-shadow: 3px -2px var(--color-black);
+  letter-spacing: 0.25rem;
+}
+
+.app-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -6.5rem;
+}
+.app-header__logo {
+  width: 40rem;
+}
+.app-header__title {
+  margin-top: -4.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
