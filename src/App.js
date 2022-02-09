@@ -10,7 +10,7 @@ function App() {
           alt='The Binding of Isacc: Four Souls'
           className='app-header__logo'
         />
-        <div className='app-header__title'>Custom Card Maker</div>
+        <div className='app-header__title'>Custom Card Maker!</div>
       </div>
     </div>
   );

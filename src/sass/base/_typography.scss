@@ -10,9 +10,8 @@
 }
 
 .app-header__title {
-  font-family: 'Title';
-  font-size: 3.4rem;
-  color: variables.$bone;
-  text-shadow: 3px -2px var(--color-black);
-  letter-spacing: 0.25rem;
+  font-family: 'Scratch';
+  font-size: 4rem;
+  color: variables.$blood;
+  text-shadow: 3px -2px variables.$blood-dark;
 }

@@ -43,4 +43,15 @@ body {
   background: #2b1e1d40;
   backdrop-filter: blur(2px);
   padding: 11.5rem 12rem;
+
+  //! Test border for sizing
+  &:after {
+    content: '';
+    position: absolute;
+    left: 11.5rem;
+    top: 12rem;
+    width: calc(100vw + ($negativeMargin * 2) - 23rem);
+    min-height: calc(100vh + ($negativeMargin * 2) - 24rem);
+    border: 2px dotted orangered;
+  }
 }

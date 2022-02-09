@@ -41,6 +41,15 @@ body {
   backdrop-filter: blur(2px);
   padding: 11.5rem 12rem;
 }
+.App:after {
+  content: "";
+  position: absolute;
+  left: 11.5rem;
+  top: 12rem;
+  width: calc(100vw + 4rem - 23rem);
+  min-height: calc(100vh + 4rem - 24rem);
+  border: 2px dotted orangered;
+}
 
 @font-face {
   font-family: "Title";
@@ -49,6 +58,10 @@ body {
 @font-face {
   font-family: "Body";
   src: local("Font_soulsV2_Body-Regular"), url("../assets/fonts/Font_soulsV2_Body-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Scratch";
+  src: local("TheEnd_v2"), url("../assets/fonts/TheEnd_v2.ttf") format("truetype");
 }
 .font-title {
   font-family: "Title";
@@ -61,11 +74,10 @@ body {
 }
 
 .app-header__title {
-  font-family: "Title";
-  font-size: 3.4rem;
-  color: #d4bda5;
-  text-shadow: 3px -2px var(--color-black);
-  letter-spacing: 0.25rem;
+  font-family: "Scratch";
+  font-size: 4rem;
+  color: #ae2f28;
+  text-shadow: 3px -2px #280b0c;
 }
 
 .app-header {
