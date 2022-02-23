@@ -96,13 +96,14 @@ body {
 
 .app-content {
   border: 2px dotted rgba(153, 205, 50, 0.4);
-  height: 80rem;
-  padding: 1rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .card-select {
-  width: 184px;
-  height: 251px;
   background-size: cover;
   border-radius: 7px;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
