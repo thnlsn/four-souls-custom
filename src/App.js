@@ -1,12 +1,10 @@
 //* Imports
 import logo from './assets/images/FourSoulsLogo.png';
-import backs from './assets/cards/backs';
+
+//* Components
+import Back from './components/cardBack';
 
 function App() {
-  const handleCardClick = (card) => {
-    console.log(`Clicked ${card} card back`);
-  };
-
   return (
     <div className='App'>
       <div className='app-header'>
@@ -22,11 +20,13 @@ function App() {
         <div className='app-header__right'>right</div>
       </div>
       <div className='app-content'>
-        <div
-          className='card-select'
-          style={{ backgroundImage: `url(${backs['char']})` }}
-          onClick={() => handleCardClick()}
-        />
+        <Back card='char' />
+        <Back card='eter' />
+        <Back card='loot' />
+        <Back card='mons' />
+        <Back card='room' />
+        <Back card='soul' />
+        <Back card='tres' />
       </div>
     </div>
   );
