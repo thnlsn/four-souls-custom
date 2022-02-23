@@ -29,7 +29,7 @@ body {
   border-image-width: 156px 104px;
   border-image-repeat: stretch repeat;
   border-image-slice: 156 104 156 fill;
-  overflow: hidden;
+  overflow-x: hidden;
   min-height: calc(100vh + 4rem);
   margin: -2rem;
 }
@@ -39,15 +39,6 @@ body {
   background: #2b1e1d40;
   backdrop-filter: blur(2px);
   padding: 11.5rem 12rem;
-}
-.App:after {
-  content: "";
-  position: absolute;
-  left: 12rem;
-  top: 11.5rem;
-  width: calc(100vw + 4rem - 24rem);
-  min-height: calc(100vh + 4rem - 23rem);
-  border: 2px dotted rgba(255, 255, 255, 0.5);
 }
 
 @font-face {
