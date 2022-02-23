@@ -48,10 +48,16 @@ body {
   &:after {
     content: '';
     position: absolute;
+    //width: calc(100vw + 4rem - 23.5rem);
+    //min-height: calc(100vh + 4rem - 21rem);
+    //border: 2px dotted rgba(255, 255, 255, 0.5); //! REMOVE
+    //left: 12rem;
+    //top: 11.5rem;
+
     left: 11.5rem;
     top: 12rem;
-    width: calc(100vw + ($negativeMargin * 2) - 23rem);
-    min-height: calc(100vh + ($negativeMargin * 2) - 24rem);
-    border: 2px dotted orangered;
+    width: calc(100vw + ($negativeMargin * 2) - 24rem);
+    min-height: calc(100vh + ($negativeMargin * 2) - 23rem);
+    border: 2px dotted rgba(255, 255, 255, 0.5); //! REMOVE
   }
 }

@@ -6,13 +6,13 @@ function App() {
     <div className='App'>
       <div className='app-header'>
         <div className='app-header__left'>left</div>
-        <div className='app-header__brand'>
+        <div className='app-logo'>
           <img
             src={logo}
             alt='The Binding of Isacc: Four Souls'
-            className='app-header__logo'
+            className='app-logo__image'
           />
-          <div className='app-header__title'>Custom Card Maker!</div>
+          <div className='app-logo__title'>Custom Card Maker!</div>
         </div>
         <div className='app-header__right'>right</div>
       </div>

@@ -45,9 +45,9 @@ body {
   position: absolute;
   left: 11.5rem;
   top: 12rem;
-  width: calc(100vw + 4rem - 23rem);
-  min-height: calc(100vh + 4rem - 24rem);
-  border: 2px dotted orangered;
+  width: calc(100vw + 4rem - 24rem);
+  min-height: calc(100vh + 4rem - 23rem);
+  border: 2px dotted rgba(255, 255, 255, 0.5);
 }
 
 @font-face {
@@ -72,7 +72,7 @@ body {
   font-size: 1.6rem;
 }
 
-.app-header__title {
+.app-logo__title {
   font-family: "Scratch";
   font-size: 4rem;
   color: #ae2f28;
@@ -81,15 +81,21 @@ body {
 
 .app-header {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.app-logo {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: -6.5rem;
 }
-.app-header__logo {
+.app-logo__image {
   width: 40rem;
 }
-.app-header__title {
+.app-logo__title {
   margin-top: -4.2rem;
 }
 

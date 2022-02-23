@@ -2,12 +2,18 @@
 
 .app-header {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.app-logo {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: -6.5rem;
 
-  &__logo {
+  &__image {
     width: 40rem;
     // z-index: 10;
   }
