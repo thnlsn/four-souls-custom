@@ -1,5 +1,6 @@
 //* Imports
 import logo from './assets/images/FourSoulsLogo.png';
+import char from './assets/cards/backs/char.png';
 
 function App() {
   return (
@@ -16,7 +17,12 @@ function App() {
         </div>
         <div className='app-header__right'>right</div>
       </div>
-      <div className='app-content'>content</div>
+      <div className='app-content'>
+        <div
+          className='card-select'
+          style={{ backgroundImage: `url(${char})` }}
+        ></div>
+      </div>
     </div>
   );
 }

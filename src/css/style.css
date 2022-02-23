@@ -77,7 +77,7 @@ body {
 }
 .app-header__left, .app-header__right {
   flex-grow: 1;
-  border: 2px dotted rgba(255, 68, 0, 0.4);
+  border: 2px dotted rgba(255, 68, 0, 0.25);
 }
 
 .app-logo {
@@ -97,6 +97,14 @@ body {
 .app-content {
   border: 2px dotted rgba(153, 205, 50, 0.4);
   height: 80rem;
+  padding: 1rem;
+}
+
+.card-select {
+  border: 2px dotted rgba(137, 43, 226, 0.5);
+  width: 184px;
+  height: 251px;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
