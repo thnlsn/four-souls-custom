@@ -46,18 +46,23 @@ body {
 
   //! Test border for sizing
   &:after {
-    content: '';
-    position: absolute;
+    //! REMOVE !!!!!! TESTING !!!!!!
+    content: ''; //! REMOVE !!!!!! TESTING !!!!!!
+    position: absolute; //! REMOVE !!!!!! TESTING !!!!!!
     //width: calc(100vw + 4rem - 23.5rem);
     //min-height: calc(100vh + 4rem - 21rem);
-    //border: 2px dotted rgba(255, 255, 255, 0.5); //! REMOVE
+    //border: 2px dotted rgba(255, 255, 255, 0.5);
     //left: 12rem;
     //top: 11.5rem;
 
-    left: 11.5rem;
-    top: 12rem;
-    width: calc(100vw + ($negativeMargin * 2) - 24rem);
-    min-height: calc(100vh + ($negativeMargin * 2) - 23rem);
-    border: 2px dotted rgba(255, 255, 255, 0.5); //! REMOVE
+    left: 12rem; //! REMOVE !!!!!! TESTING !!!!!!
+    top: 11.5rem; //! REMOVE !!!!!! TESTING !!!!!!
+    width: calc(
+      100vw + ($negativeMargin * 2) - 24rem
+    ); //! REMOVE !!!!!! TESTING !!!!!!
+    min-height: calc(
+      100vh + ($negativeMargin * 2) - 23rem
+    ); //! REMOVE !!!!!! TESTING !!!!!!
+    border: 2px dotted rgba(255, 255, 255, 0.5); //! REMOVE !!!!!! TESTING !!!!!!
   }
 }

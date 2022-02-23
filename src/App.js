@@ -16,7 +16,7 @@ function App() {
         </div>
         <div className='app-header__right'>right</div>
       </div>
-      <div className='content'>content</div>
+      <div className='app-content'>content</div>
     </div>
   );
 }

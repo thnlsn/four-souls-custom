@@ -43,8 +43,8 @@ body {
 .App:after {
   content: "";
   position: absolute;
-  left: 11.5rem;
-  top: 12rem;
+  left: 12rem;
+  top: 11.5rem;
   width: calc(100vw + 4rem - 24rem);
   min-height: calc(100vh + 4rem - 23rem);
   border: 2px dotted rgba(255, 255, 255, 0.5);
@@ -84,6 +84,10 @@ body {
   flex-direction: row;
   justify-content: center;
 }
+.app-header__left, .app-header__right {
+  flex-grow: 1;
+  border: 2px dotted rgba(255, 68, 0, 0.4);
+}
 
 .app-logo {
   display: flex;
@@ -97,6 +101,11 @@ body {
 }
 .app-logo__title {
   margin-top: -4.2rem;
+}
+
+.app-content {
+  border: 2px dotted rgba(153, 205, 50, 0.4);
+  height: 80rem;
 }
 
 /*# sourceMappingURL=style.css.map */
