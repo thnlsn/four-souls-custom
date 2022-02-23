@@ -5,13 +5,18 @@ function App() {
   return (
     <div className='App'>
       <div className='app-header'>
-        <img
-          src={logo}
-          alt='The Binding of Isacc: Four Souls'
-          className='app-header__logo'
-        />
-        <div className='app-header__title'>Custom Card Maker!</div>
+        <div className='app-header__left'>left</div>
+        <div className='app-header__brand'>
+          <img
+            src={logo}
+            alt='The Binding of Isacc: Four Souls'
+            className='app-header__logo'
+          />
+          <div className='app-header__title'>Custom Card Maker!</div>
+        </div>
+        <div className='app-header__right'>right</div>
       </div>
+      <div className='content'>content</div>
     </div>
   );
 }
