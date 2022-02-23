@@ -29,13 +29,12 @@ body {
   border-image-width: 156px 104px;
   border-image-repeat: stretch repeat;
   border-image-slice: 156 104 156 fill;
-  width: calc(100vw + 4rem);
+  overflow: hidden;
   min-height: calc(100vh + 4rem);
   margin: -2rem;
 }
 
 .App {
-  width: calc(100vw + 4rem);
   min-height: calc(100vh + 4rem);
   background: #2b1e1d40;
   backdrop-filter: blur(2px);

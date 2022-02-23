@@ -21,7 +21,7 @@ html {
 }
 
 //? LOCAL VARIABLES
-$negativeMargin: 2rem;
+$negativeMargin: 2rem; //~ Why is this here?
 
 body {
   // Set the default font styles, colors, etc.
@@ -31,14 +31,14 @@ body {
   border-image-width: 156px 104px; //! Remove this at really thin viewports
   border-image-repeat: stretch repeat;
   border-image-slice: 156 104 156 fill;
-  //overflow: hidden;
-  width: calc(100vw + ($negativeMargin * 2));
+  overflow: hidden;
+  //width: calc(100vw + ($negativeMargin * 2));
   min-height: calc(100vh + ($negativeMargin * 2));
   margin: -$negativeMargin;
 }
 
 .App {
-  width: calc(100vw + ($negativeMargin * 2));
+  //width: calc(100vw + ($negativeMargin * 2));
   min-height: calc(100vh + ($negativeMargin * 2));
   background: #2b1e1d40;
   backdrop-filter: blur(2px);
