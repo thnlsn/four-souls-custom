@@ -35,8 +35,11 @@
 }
 
 .card-select {
-  border: 2px dotted rgba(137, 43, 226, 0.5); //! REMOVE !!!!!! TESTING !!!!!!
+  //border: 2px dotted rgba(137, 43, 226, 0.5); //! REMOVE !!!!!! TESTING !!!!!!
   width: 184px;
   height: 251px;
   background-size: cover;
+  border-radius: variables.$radius;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
