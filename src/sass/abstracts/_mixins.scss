@@ -1,0 +1,46 @@
+@use '../abstracts/variables' as variables;
+
+@mixin cardPseudos($card, $deg) {
+  content: '';
+  background-image: url('../assets/cards/backs/' + $card + '.png');
+  background-size: cover;
+  border-radius: variables.$radius;
+
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+  z-index: -1000;
+
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+@mixin card($card, $deg) {
+  content: '';
+  transform: rotate(0); //! NOT WORKING, CREATING NEW STACKING CONTEXT !!!!!!
+  border: 1px solid white; //! REMOVE !!!!!! TESTING !!!!!!
+  background-image: url('../assets/cards/backs/' + $card + '.png');
+  position: relative;
+
+  transition: transform 0.15s;
+
+  &:before {
+    transition: transform 0.15s;
+    @include cardPseudos($card, ($deg / 2));
+    border: 1px solid blue; //! REMOVE !!!!!! TESTING !!!!!!
+  }
+  &:after {
+    transition: transform 0.15s;
+    @include cardPseudos($card, $deg);
+    border: 1px solid red; //! REMOVE !!!!!! TESTING !!!!!!
+  }
+
+  &:hover {
+    &:before {
+      transform: rotate($deg / 2);
+    }
+    &:after {
+      transform: rotate($deg);
+    }
+  }
+}

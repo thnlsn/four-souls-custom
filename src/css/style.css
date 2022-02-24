@@ -102,36 +102,293 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .card-select {
   background-size: cover;
   border-radius: 7px;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-  /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
-    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 .card-select--char {
+  content: "";
+  transform: rotate(0);
+  border: 1px solid white;
   background-image: url("../assets/cards/backs/char.png");
+  position: relative;
+  transition: transform 0.15s;
+}
+.card-select--char:before {
+  transition: transform 0.15s;
+  content: "";
+  background-image: url("../assets/cards/backs/char.png");
+  background-size: cover;
+  border-radius: 7px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1000;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border: 1px solid blue;
+}
+.card-select--char:after {
+  transition: transform 0.15s;
+  content: "";
+  background-image: url("../assets/cards/backs/char.png");
+  background-size: cover;
+  border-radius: 7px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1000;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border: 1px solid red;
+}
+.card-select--char:hover:before {
+  transform: rotate(2deg);
+}
+.card-select--char:hover:after {
+  transform: rotate(4deg);
 }
 .card-select--eter {
+  content: "";
+  transform: rotate(0);
+  border: 1px solid white;
   background-image: url("../assets/cards/backs/eter.png");
+  position: relative;
+  transition: transform 0.15s;
+}
+.card-select--eter:before {
+  transition: transform 0.15s;
+  content: "";
+  background-image: url("../assets/cards/backs/eter.png");
+  background-size: cover;
+  border-radius: 7px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1000;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border: 1px solid blue;
+}
+.card-select--eter:after {
+  transition: transform 0.15s;
+  content: "";
+  background-image: url("../assets/cards/backs/eter.png");
+  background-size: cover;
+  border-radius: 7px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1000;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border: 1px solid red;
+}
+.card-select--eter:hover:before {
+  transform: rotate(2deg);
+}
+.card-select--eter:hover:after {
+  transform: rotate(4deg);
 }
 .card-select--loot {
+  content: "";
+  transform: rotate(0);
+  border: 1px solid white;
   background-image: url("../assets/cards/backs/loot.png");
+  position: relative;
+  transition: transform 0.15s;
+}
+.card-select--loot:before {
+  transition: transform 0.15s;
+  content: "";
+  background-image: url("../assets/cards/backs/loot.png");
+  background-size: cover;
+  border-radius: 7px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1000;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border: 1px solid blue;
+}
+.card-select--loot:after {
+  transition: transform 0.15s;
+  content: "";
+  background-image: url("../assets/cards/backs/loot.png");
+  background-size: cover;
+  border-radius: 7px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1000;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border: 1px solid red;
+}
+.card-select--loot:hover:before {
+  transform: rotate(2deg);
+}
+.card-select--loot:hover:after {
+  transform: rotate(4deg);
 }
 .card-select--mons {
+  content: "";
+  transform: rotate(0);
+  border: 1px solid white;
   background-image: url("../assets/cards/backs/mons.png");
+  position: relative;
+  transition: transform 0.15s;
+}
+.card-select--mons:before {
+  transition: transform 0.15s;
+  content: "";
+  background-image: url("../assets/cards/backs/mons.png");
+  background-size: cover;
+  border-radius: 7px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1000;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border: 1px solid blue;
+}
+.card-select--mons:after {
+  transition: transform 0.15s;
+  content: "";
+  background-image: url("../assets/cards/backs/mons.png");
+  background-size: cover;
+  border-radius: 7px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1000;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border: 1px solid red;
+}
+.card-select--mons:hover:before {
+  transform: rotate(2deg);
+}
+.card-select--mons:hover:after {
+  transform: rotate(4deg);
 }
 .card-select--room {
+  content: "";
+  transform: rotate(0);
+  border: 1px solid white;
   background-image: url("../assets/cards/backs/room.png");
+  position: relative;
+  transition: transform 0.15s;
+}
+.card-select--room:before {
+  transition: transform 0.15s;
+  content: "";
+  background-image: url("../assets/cards/backs/room.png");
+  background-size: cover;
+  border-radius: 7px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1000;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border: 1px solid blue;
+}
+.card-select--room:after {
+  transition: transform 0.15s;
+  content: "";
+  background-image: url("../assets/cards/backs/room.png");
+  background-size: cover;
+  border-radius: 7px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1000;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border: 1px solid red;
+}
+.card-select--room:hover:before {
+  transform: rotate(2deg);
+}
+.card-select--room:hover:after {
+  transform: rotate(4deg);
 }
 .card-select--soul {
+  content: "";
+  transform: rotate(0);
+  border: 1px solid white;
   background-image: url("../assets/cards/backs/soul.png");
+  position: relative;
+  transition: transform 0.15s;
+}
+.card-select--soul:before {
+  transition: transform 0.15s;
+  content: "";
+  background-image: url("../assets/cards/backs/soul.png");
+  background-size: cover;
+  border-radius: 7px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1000;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border: 1px solid blue;
+}
+.card-select--soul:after {
+  transition: transform 0.15s;
+  content: "";
+  background-image: url("../assets/cards/backs/soul.png");
+  background-size: cover;
+  border-radius: 7px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1000;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border: 1px solid red;
+}
+.card-select--soul:hover:before {
+  transform: rotate(2deg);
+}
+.card-select--soul:hover:after {
+  transform: rotate(4deg);
 }
 .card-select--tres {
+  content: "";
+  transform: rotate(0);
+  border: 1px solid white;
   background-image: url("../assets/cards/backs/tres.png");
+  position: relative;
+  transition: transform 0.15s;
+}
+.card-select--tres:before {
+  transition: transform 0.15s;
+  content: "";
+  background-image: url("../assets/cards/backs/tres.png");
+  background-size: cover;
+  border-radius: 7px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1000;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border: 1px solid blue;
+}
+.card-select--tres:after {
+  transition: transform 0.15s;
+  content: "";
+  background-image: url("../assets/cards/backs/tres.png");
+  background-size: cover;
+  border-radius: 7px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1000;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border: 1px solid red;
+}
+.card-select--tres:hover:before {
+  transform: rotate(2deg);
+}
+.card-select--tres:hover:after {
+  transform: rotate(4deg);
 }
 
 /*# sourceMappingURL=style.css.map */

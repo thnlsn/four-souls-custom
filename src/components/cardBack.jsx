@@ -10,7 +10,6 @@ const cardBack = ({ card }) => {
     <div
       className={`card-select card-select--${card}`}
       style={{
-        //backgroundImage: `url(${backs[card]})`,
         width: card !== 'room' ? '184px' : '251px',
         height: card !== 'room' ? '251px' : '184px',
       }}
