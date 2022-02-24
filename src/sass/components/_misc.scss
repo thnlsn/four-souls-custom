@@ -43,33 +43,31 @@
   gap: 3rem;
 }
 
-$deg: 4deg;
 .card-select {
   //border: 2px dotted rgba(137, 43, 226, 0.5); //! REMOVE !!!!!! TESTING !!!!!!
   background-size: cover;
-  border-radius: variables.$radius;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-  //box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  border-radius: variables.$card-radius;
+  box-shadow: variables.$card-shadow;
 
   &--char {
-    @include mixins.card('char', $deg);
+    @include mixins.card('char', variables.$card-deg);
   }
   &--eter {
-    @include mixins.card('eter', $deg);
+    @include mixins.card('eter', variables.$card-deg);
   }
   &--loot {
-    @include mixins.card('loot', $deg);
+    @include mixins.card('loot', variables.$card-deg);
   }
   &--mons {
-    @include mixins.card('mons', $deg);
+    @include mixins.card('mons', variables.$card-deg);
   }
   &--room {
-    @include mixins.card('room', $deg);
+    @include mixins.card('room', variables.$card-deg);
   }
   &--soul {
-    @include mixins.card('soul', $deg);
+    @include mixins.card('soul', variables.$card-deg);
   }
   &--tres {
-    @include mixins.card('tres', $deg);
+    @include mixins.card('tres', variables.$card-deg);
   }
 }

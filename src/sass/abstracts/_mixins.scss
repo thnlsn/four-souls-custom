@@ -2,9 +2,8 @@
 
 @mixin cardPseudos($card, $deg) {
   content: '';
-  background-image: url('../assets/cards/backs/' + $card + '.png');
   background-size: cover;
-  border-radius: variables.$radius;
+  border-radius: variables.$card-radius;
 
   height: 100%;
   width: 100%;
@@ -12,35 +11,38 @@
   position: absolute;
   z-index: -1000;
 
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  box-shadow: variables.$card-shadow;
 }
 
 @mixin card($card, $deg) {
   content: '';
-  transform: rotate(0); //! NOT WORKING, CREATING NEW STACKING CONTEXT !!!!!!
-  border: 1px solid white; //! REMOVE !!!!!! TESTING !!!!!!
-  background-image: url('../assets/cards/backs/' + $card + '.png');
+  transform: rotate(0);
+  background: variables.$card-darken,
+    url('../assets/cards/backs/' + $card + '.png');
+  background-size: cover;
   position: relative;
-
-  transition: transform 0.15s;
+  transition: transform 0.2s;
 
   &:before {
+    background: variables.$card-darken,
+      url('../assets/cards/backs/' + $card + '.png');
     transition: transform 0.15s;
     @include cardPseudos($card, ($deg / 2));
-    border: 1px solid blue; //! REMOVE !!!!!! TESTING !!!!!!
   }
+  // :after appears on top, so don't darken the image
   &:after {
-    transition: transform 0.15s;
+    background-image: url('../assets/cards/backs/' + $card + '.png');
+    transition: transform 0.1s;
     @include cardPseudos($card, $deg);
-    border: 1px solid red; //! REMOVE !!!!!! TESTING !!!!!!
   }
 
   &:hover {
+    transform: rotate(-$deg);
     &:before {
-      transform: rotate($deg / 2);
+      transform: rotate($deg);
     }
     &:after {
-      transform: rotate($deg);
+      transform: rotate($deg * 2);
     }
   }
 }
