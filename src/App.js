@@ -25,8 +25,8 @@ function App() {
         <Back card='tres' />
         <Back card='loot' />
         <Back card='mons' />
-        <Back card='room' />
         <Back card='soul' />
+        <Back card='room' />
       </div>
     </div>
   );

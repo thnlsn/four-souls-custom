@@ -39,36 +39,42 @@
   //For the clickable backs
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 3rem;
 }
 
 .card-select {
-  //border: 2px dotted rgba(137, 43, 226, 0.5); //! REMOVE !!!!!! TESTING !!!!!!
-  background-size: cover;
-  border-radius: variables.$card-radius;
-  box-shadow: variables.$card-shadow;
-  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  &--char {
-    @include mixins.card('char', variables.$card-deg);
-  }
-  &--eter {
-    @include mixins.card('eter', variables.$card-deg);
-  }
-  &--loot {
-    @include mixins.card('loot', variables.$card-deg);
-  }
-  &--mons {
-    @include mixins.card('mons', variables.$card-deg);
-  }
-  &--room {
-    @include mixins.card('room', variables.$card-deg);
-  }
-  &--soul {
-    @include mixins.card('soul', variables.$card-deg);
-  }
-  &--tres {
-    @include mixins.card('tres', variables.$card-deg);
+  &__image {
+    background-size: cover;
+    border-radius: variables.$card-radius;
+    box-shadow: variables.$card-shadow;
+    cursor: pointer;
+
+    &--char {
+      @include mixins.card('char', variables.$card-deg);
+    }
+    &--eter {
+      @include mixins.card('eter', variables.$card-deg);
+    }
+    &--loot {
+      @include mixins.card('loot', variables.$card-deg);
+    }
+    &--mons {
+      @include mixins.card('mons', variables.$card-deg);
+    }
+    &--room {
+      @include mixins.card('room', variables.$card-deg);
+    }
+    &--soul {
+      @include mixins.card('soul', variables.$card-deg);
+    }
+    &--tres {
+      @include mixins.card('tres', variables.$card-deg);
+    }
   }
 }

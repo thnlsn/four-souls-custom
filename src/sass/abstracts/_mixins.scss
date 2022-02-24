@@ -15,7 +15,6 @@
 }
 
 @mixin card($card, $deg) {
-  content: '';
   transform: rotate(0);
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url('../assets/cards/backs/' + $card + '.png');
