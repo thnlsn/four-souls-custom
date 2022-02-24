@@ -46,35 +46,55 @@
 
 .card-select {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
 
   &__image {
     background-size: cover;
     border-radius: variables.$card-radius;
     box-shadow: variables.$card-shadow;
-    cursor: pointer;
 
     &--char {
-      @include mixins.card('char', variables.$card-deg);
+      @include mixins.card('char');
     }
     &--eter {
-      @include mixins.card('eter', variables.$card-deg);
+      @include mixins.card('eter');
     }
     &--loot {
-      @include mixins.card('loot', variables.$card-deg);
+      @include mixins.card('loot');
     }
     &--mons {
-      @include mixins.card('mons', variables.$card-deg);
+      @include mixins.card('mons');
     }
     &--room {
-      @include mixins.card('room', variables.$card-deg);
+      @include mixins.card('room');
     }
     &--soul {
-      @include mixins.card('soul', variables.$card-deg);
+      @include mixins.card('soul');
     }
     &--tres {
-      @include mixins.card('tres', variables.$card-deg);
+      @include mixins.card('tres');
     }
+  }
+
+  &__text {
+    //cursor: pointer;
+    transition: transform 0.15s;
+  }
+
+  &:hover > &__image {
+    transform: rotate(-(variables.$card-deg));
+    &:before {
+      transform: rotate(variables.$card-deg);
+    }
+    &:after {
+      transform: rotate(variables.$card-deg * 2);
+    }
+  }
+  &:hover > &__text {
+    transform: scale(1.05);
+    //transform: rotate(variables.$card-deg / 2);
   }
 }

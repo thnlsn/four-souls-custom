@@ -70,6 +70,12 @@ body {
   text-shadow: 3px -2px #280b0c;
 }
 
+/* .card-select__text {
+  font-family: 'Scratch';
+  font-size: 4rem;
+  color: variables.$blood;
+  text-shadow: 3px -2px variables.$blood-dark;
+} */
 .app-header {
   display: flex;
   flex-direction: row;
@@ -108,14 +114,15 @@ body {
 
 .card-select {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
 }
 .card-select__image {
   background-size: cover;
   border-radius: 7px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  cursor: pointer;
 }
 .card-select__image--char {
   transform: rotate(0);
@@ -148,15 +155,6 @@ body {
   z-index: -1000;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
-.card-select__image--char:hover {
-  transform: rotate(-3deg);
-}
-.card-select__image--char:hover:before {
-  transform: rotate(3deg);
-}
-.card-select__image--char:hover:after {
-  transform: rotate(6deg);
-}
 .card-select__image--eter {
   transform: rotate(0);
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/cards/backs/eter.png");
@@ -187,15 +185,6 @@ body {
   position: absolute;
   z-index: -1000;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-}
-.card-select__image--eter:hover {
-  transform: rotate(-3deg);
-}
-.card-select__image--eter:hover:before {
-  transform: rotate(3deg);
-}
-.card-select__image--eter:hover:after {
-  transform: rotate(6deg);
 }
 .card-select__image--loot {
   transform: rotate(0);
@@ -228,15 +217,6 @@ body {
   z-index: -1000;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
-.card-select__image--loot:hover {
-  transform: rotate(-3deg);
-}
-.card-select__image--loot:hover:before {
-  transform: rotate(3deg);
-}
-.card-select__image--loot:hover:after {
-  transform: rotate(6deg);
-}
 .card-select__image--mons {
   transform: rotate(0);
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/cards/backs/mons.png");
@@ -267,15 +247,6 @@ body {
   position: absolute;
   z-index: -1000;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-}
-.card-select__image--mons:hover {
-  transform: rotate(-3deg);
-}
-.card-select__image--mons:hover:before {
-  transform: rotate(3deg);
-}
-.card-select__image--mons:hover:after {
-  transform: rotate(6deg);
 }
 .card-select__image--room {
   transform: rotate(0);
@@ -308,15 +279,6 @@ body {
   z-index: -1000;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
-.card-select__image--room:hover {
-  transform: rotate(-3deg);
-}
-.card-select__image--room:hover:before {
-  transform: rotate(3deg);
-}
-.card-select__image--room:hover:after {
-  transform: rotate(6deg);
-}
 .card-select__image--soul {
   transform: rotate(0);
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/cards/backs/soul.png");
@@ -347,15 +309,6 @@ body {
   position: absolute;
   z-index: -1000;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-}
-.card-select__image--soul:hover {
-  transform: rotate(-3deg);
-}
-.card-select__image--soul:hover:before {
-  transform: rotate(3deg);
-}
-.card-select__image--soul:hover:after {
-  transform: rotate(6deg);
 }
 .card-select__image--tres {
   transform: rotate(0);
@@ -388,14 +341,20 @@ body {
   z-index: -1000;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
-.card-select__image--tres:hover {
+.card-select__text {
+  transition: transform 0.15s;
+}
+.card-select:hover > .card-select__image {
   transform: rotate(-3deg);
 }
-.card-select__image--tres:hover:before {
+.card-select:hover > .card-select__image:before {
   transform: rotate(3deg);
 }
-.card-select__image--tres:hover:after {
+.card-select:hover > .card-select__image:after {
   transform: rotate(6deg);
+}
+.card-select:hover > .card-select__text {
+  transform: scale(1.05);
 }
 
 /*# sourceMappingURL=style.css.map */

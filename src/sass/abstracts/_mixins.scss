@@ -1,6 +1,6 @@
 @use '../abstracts/variables' as variables;
 
-@mixin cardPseudos($card, $deg) {
+@mixin cardPseudos($card) {
   content: '';
   background-size: cover;
   border-radius: variables.$card-radius;
@@ -14,7 +14,7 @@
   box-shadow: variables.$card-shadow;
 }
 
-@mixin card($card, $deg) {
+@mixin card($card) {
   transform: rotate(0);
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url('../assets/cards/backs/' + $card + '.png');
@@ -26,22 +26,12 @@
     background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
       url('../assets/cards/backs/' + $card + '.png');
     transition: transform 0.15s;
-    @include cardPseudos($card, ($deg / 2));
+    @include cardPseudos($card);
   }
   // :after appears on top, so don't darken the image
   &:after {
     background-image: url('../assets/cards/backs/' + $card + '.png');
     transition: transform 0.1s;
-    @include cardPseudos($card, $deg);
-  }
-
-  &:hover {
-    transform: rotate(-$deg);
-    &:before {
-      transform: rotate($deg);
-    }
-    &:after {
-      transform: rotate($deg * 2);
-    }
+    @include cardPseudos($card);
   }
 }

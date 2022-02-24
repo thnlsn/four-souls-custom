@@ -28,6 +28,12 @@ const cardBack = ({ card }) => {
   return (
     <div className='card-select'>
       <div
+        className='card-select__text font-title'
+        onClick={() => handleCardClick()}
+      >
+        {cardType()}
+      </div>
+      <div
         className={`card-select__image card-select__image--${card}`}
         style={{
           width: card !== 'room' ? '184px' : '251px',
@@ -35,9 +41,6 @@ const cardBack = ({ card }) => {
         }}
         onClick={() => handleCardClick()}
       />
-      <div className='card-select__text' onClick={() => handleCardClick()}>
-        {cardType()}
-      </div>
     </div>
   );
 };
