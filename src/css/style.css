@@ -77,7 +77,9 @@ body {
 }
 .app-header__left, .app-header__right {
   flex-grow: 1;
-  border: 2px dotted rgba(255, 68, 0, 0.25);
+  border-top: 2px dotted rgba(255, 68, 0, 0.25);
+  border-left: 2px dotted rgba(255, 68, 0, 0.25);
+  border-right: 2px dotted rgba(255, 68, 0, 0.25);
 }
 
 .app-logo {
