@@ -109,11 +109,12 @@ body {
   background-size: cover;
   border-radius: 7px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  cursor: pointer;
 }
 .card-select--char {
   content: "";
   transform: rotate(0);
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../assets/cards/backs/char.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/cards/backs/char.png");
   background-size: cover;
   position: relative;
   transition: transform 0.2s;
@@ -154,7 +155,7 @@ body {
 .card-select--eter {
   content: "";
   transform: rotate(0);
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../assets/cards/backs/eter.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/cards/backs/eter.png");
   background-size: cover;
   position: relative;
   transition: transform 0.2s;
@@ -195,7 +196,7 @@ body {
 .card-select--loot {
   content: "";
   transform: rotate(0);
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../assets/cards/backs/loot.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/cards/backs/loot.png");
   background-size: cover;
   position: relative;
   transition: transform 0.2s;
@@ -236,7 +237,7 @@ body {
 .card-select--mons {
   content: "";
   transform: rotate(0);
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../assets/cards/backs/mons.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/cards/backs/mons.png");
   background-size: cover;
   position: relative;
   transition: transform 0.2s;
@@ -277,7 +278,7 @@ body {
 .card-select--room {
   content: "";
   transform: rotate(0);
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../assets/cards/backs/room.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/cards/backs/room.png");
   background-size: cover;
   position: relative;
   transition: transform 0.2s;
@@ -318,7 +319,7 @@ body {
 .card-select--soul {
   content: "";
   transform: rotate(0);
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../assets/cards/backs/soul.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/cards/backs/soul.png");
   background-size: cover;
   position: relative;
   transition: transform 0.2s;
@@ -359,7 +360,7 @@ body {
 .card-select--tres {
   content: "";
   transform: rotate(0);
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../assets/cards/backs/tres.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/cards/backs/tres.png");
   background-size: cover;
   position: relative;
   transition: transform 0.2s;

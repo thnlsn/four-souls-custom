@@ -48,6 +48,7 @@
   background-size: cover;
   border-radius: variables.$card-radius;
   box-shadow: variables.$card-shadow;
+  cursor: pointer;
 
   &--char {
     @include mixins.card('char', variables.$card-deg);

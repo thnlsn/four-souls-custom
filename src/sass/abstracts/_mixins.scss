@@ -17,14 +17,14 @@
 @mixin card($card, $deg) {
   content: '';
   transform: rotate(0);
-  background: variables.$card-darken,
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url('../assets/cards/backs/' + $card + '.png');
   background-size: cover;
   position: relative;
   transition: transform 0.2s;
 
   &:before {
-    background: variables.$card-darken,
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
       url('../assets/cards/backs/' + $card + '.png');
     transition: transform 0.15s;
     @include cardPseudos($card, ($deg / 2));
