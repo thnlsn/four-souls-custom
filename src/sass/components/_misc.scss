@@ -46,6 +46,29 @@
   //border: 2px dotted rgba(137, 43, 226, 0.5); //! REMOVE !!!!!! TESTING !!!!!!
   background-size: cover;
   border-radius: variables.$radius;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
-    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
+
+  &--char {
+    background-image: url('../assets/cards/backs/char.png');
+  }
+  &--eter {
+    background-image: url('../assets/cards/backs/eter.png');
+  }
+  &--loot {
+    background-image: url('../assets/cards/backs/loot.png');
+  }
+  &--mons {
+    background-image: url('../assets/cards/backs/mons.png');
+  }
+  &--room {
+    background-image: url('../assets/cards/backs/room.png');
+  }
+  &--soul {
+    background-image: url('../assets/cards/backs/soul.png');
+  }
+  &--tres {
+    background-image: url('../assets/cards/backs/tres.png');
+  }
 }
