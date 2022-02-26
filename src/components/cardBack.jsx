@@ -5,8 +5,7 @@ const CardBack = ({ card }) => {
   const { cardType, changeCardType } = useContext(CardContext);
 
   const handleCardClick = () => {
-    console.log(cardType);
-    console.log(`Clicked ${card} card back`);
+    console.log(`Changed ${cardType} to ${card}`);
     changeCardType(card);
   };
 
