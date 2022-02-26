@@ -10,10 +10,26 @@ import { CardContext } from './state/context';
 
 function App() {
   const [cardType, setCardType] = useState(null);
+  // Card detail tate
+  const [name, setName] = useState('');
+  const [image, setImage] = useState('');
+  const [health, setHealth] = useState(0);
+  const [damage, setDamage] = useState(0);
+  const [effects, setEffects] = useState([]);
+  const [reminder, setReminder] = useState('');
+  const [flavor, setFlavor] = useState('');
+  const [item, setItem] = useState('');
 
-  const changeCardType = (card) => {
-    setCardType(card);
-  };
+  const changeCardType = (card) => setCardType(card);
+  // Card detail update state
+  const changeName = (name) => setName(name);
+  const changeImage = (image) => setImage(image);
+  const changeHealth = (health) => setHealth(health);
+  const changeDamage = (damage) => setDamage(damage);
+  const changeEffects = (effects) => setEffects(effects);
+  const changeReminder = (reminder) => setReminder(reminder);
+  const changeFlavor = (flavor) => setFlavor(flavor);
+  const changeItem = (item) => setItem(item);
 
   return (
     <div className='App'>
@@ -21,6 +37,23 @@ function App() {
         value={{
           cardType,
           changeCardType,
+          // Card detail state
+          name,
+          changeName,
+          image,
+          changeImage,
+          health,
+          changeHealth,
+          damage,
+          changeDamage,
+          effects,
+          changeEffects,
+          reminder,
+          changeReminder,
+          flavor,
+          changeFlavor,
+          item,
+          changeItem,
         }}
       >
         <Header />
