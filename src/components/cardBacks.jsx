@@ -3,7 +3,7 @@ import Back from './CardBack';
 
 const CardBacks = () => {
   return (
-    <div className='app-content'>
+    <div className='app-content card-backs-content'>
       <Back card='char' />
       <Back card='eter' />
       <Back card='tres' />

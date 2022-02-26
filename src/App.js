@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 //* Components
 import Backs from './components/CardBacks';
 import Header from './components/HomeHeader';
+import Edit from './components/CardEdit';
 
 //* Context
 import { CardContext } from './state/context';
@@ -57,7 +58,7 @@ function App() {
         }}
       >
         <Header />
-        <Backs />
+        {cardType ? <Edit /> : <Backs />}
       </CardContext.Provider>
     </div>
   );

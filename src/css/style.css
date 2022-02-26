@@ -105,6 +105,9 @@ body {
 .app-content {
   border: 2px dotted rgba(153, 205, 50, 0.4);
   padding: 2rem;
+}
+
+.card-backs-content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -356,6 +359,29 @@ body {
 }
 .card-select:hover > .card-select__text {
   transform: scale(1.05);
+}
+
+.card-editor-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.card-editor-content > div {
+  border: 2px dotted rgba(255, 255, 255, 0.05);
+}
+.card-editor-content div:first-of-type {
+  border-right-width: 1px;
+}
+.card-editor-content div:last-of-type {
+  border-left-width: 1px;
+}
+
+.card-form__input {
+  padding: 0.5rem;
+  border: 1px solid #d4bda5;
+  border-radius: 4px;
+  background-color: #493331;
+  color: var(--color-white);
+  font-size: 1.6rem;
 }
 
 /*# sourceMappingURL=style.css.map */

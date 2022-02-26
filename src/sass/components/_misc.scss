@@ -35,7 +35,9 @@
   border: 2px dotted rgba(153, 205, 50, 0.4); //! REMOVE !!!!!! TESTING !!!!!!
   //height: 80rem;
   padding: 2rem;
+}
 
+.card-backs-content {
   //For the clickable backs
   display: flex;
   justify-content: center;
@@ -98,5 +100,40 @@
   &:hover > &__text {
     transform: scale(1.05);
     //transform: rotate(variables.$card-deg / 2);
+  }
+}
+
+.card-editor-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  & > div {
+    border: 2px dotted rgba(255, 255, 255, 0.05);
+  }
+  & div:first-of-type {
+    border-right-width: 1px;
+  }
+  & div:last-of-type {
+    border-left-width: 1px;
+  }
+}
+
+.card-form {
+  &__input {
+    padding: 0.5rem;
+    border: 1px solid variables.$bone;
+    border-radius: 4px;
+    background-color: variables.$background;
+    color: var(--color-white);
+    font-size: 1.6rem;
+  }
+
+  &[type='text'] {
+  }
+  &[type='number'] {
+  }
+  &[type='checkbox'] {
+  }
+  &[type='select'] {
   }
 }
