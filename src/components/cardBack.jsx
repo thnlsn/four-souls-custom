@@ -1,12 +1,16 @@
-import React from 'react';
-import backs from '../assets/cards/backs';
+import React, { useContext } from 'react';
+import { CardContext } from '../state/context';
 
-const cardBack = ({ card }) => {
+const CardBack = ({ card }) => {
+  const { cardType, changeCardType } = useContext(CardContext);
+
   const handleCardClick = () => {
+    console.log(cardType);
     console.log(`Clicked ${card} card back`);
+    changeCardType(card);
   };
 
-  const cardType = () => {
+  const cardTypeFull = () => {
     switch (card) {
       case 'char':
         return 'Character';
@@ -31,7 +35,7 @@ const cardBack = ({ card }) => {
         className='card-select__text font-title'
         onClick={() => handleCardClick()}
       >
-        {cardType()}
+        {cardTypeFull()}
       </div>
       <div
         className={`card-select__image card-select__image--${card}`}
@@ -45,4 +49,4 @@ const cardBack = ({ card }) => {
   );
 };
 
-export default cardBack;
+export default CardBack;

@@ -1,7 +1,7 @@
-import React from 'react';
-import Back from './cardBack';
+import React, { useContext } from 'react';
+import Back from './CardBack';
 
-const cardBacks = () => {
+const CardBacks = () => {
   return (
     <div className='app-content'>
       <Back card='char' />
@@ -15,4 +15,4 @@ const cardBacks = () => {
   );
 };
 
-export default cardBacks;
+export default CardBacks;

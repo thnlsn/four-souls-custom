@@ -1,25 +1,31 @@
 //* Imports
-import logo from './assets/images/FourSoulsLogo.png';
+import React, { useState } from 'react';
 
 //* Components
-import Backs from './components/cardBacks';
+import Backs from './components/CardBacks';
+import Header from './components/HomeHeader';
+
+//* Context
+import { CardContext } from './state/context';
 
 function App() {
+  const [cardType, setCardType] = useState(null);
+
+  const changeCardType = (card) => {
+    setCardType(card);
+  };
+
   return (
     <div className='App'>
-      <div className='app-header'>
-        <div className='app-header__left'>left</div>
-        <div className='app-logo'>
-          <img
-            src={logo}
-            alt='The Binding of Isacc: Four Souls'
-            className='app-logo__image'
-          />
-          <div className='app-logo__title'>Custom Card Maker!</div>
-        </div>
-        <div className='app-header__right'>right</div>
-      </div>
-      <Backs />
+      <CardContext.Provider
+        value={{
+          cardType,
+          changeCardType,
+        }}
+      >
+        <Header />
+        <Backs />
+      </CardContext.Provider>
     </div>
   );
 }
