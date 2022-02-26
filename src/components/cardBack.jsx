@@ -1,6 +1,8 @@
 import React, { useContext } from 'react';
 import { CardContext } from '../state/context';
 
+import { getDimensions } from '../scripts/helpers';
+
 const CardBack = ({ card }) => {
   const { cardType, changeCardType } = useContext(CardContext);
 
@@ -9,7 +11,7 @@ const CardBack = ({ card }) => {
     changeCardType(card);
   };
 
-  const cardTypeFull = () => {
+  const cardTypeFull = (card) => {
     switch (card) {
       case 'char':
         return 'Character';
@@ -34,13 +36,13 @@ const CardBack = ({ card }) => {
         className='card-select__text font-title'
         onClick={() => handleCardClick()}
       >
-        {cardTypeFull()}
+        {cardTypeFull(card)}
       </div>
       <div
         className={`card-select__image card-select__image--${card}`}
         style={{
-          width: card !== 'room' ? '184px' : '251px',
-          height: card !== 'room' ? '251px' : '184px',
+          width: getDimensions(cardType).width,
+          height: getDimensions(cardType).height,
         }}
         onClick={() => handleCardClick()}
       />
