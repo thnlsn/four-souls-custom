@@ -105,22 +105,27 @@
 
 .card-editor-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
 
   & > div {
-    border: 2px dotted rgba(255, 255, 255, 0.05);
+    //border: 2px dotted rgba(255, 255, 255, 0.05);
   }
   & div:first-of-type {
-    border-right-width: 1px;
+    //border-right-width: 1px;
   }
   & div:last-of-type {
-    border-left-width: 1px;
+    //border-left-width: 1px;
   }
 }
 
 .card-display {
-  background-color: rgba(variables.$white, 0.75);
+  background-color: rgba(variables.$white, 0.5);
+  border-radius: variables.$card-radius * 2;
+  background-size: cover !important;
+  box-shadow: variables.$card-shadow;
   position: relative;
+  border: 1px solid rgba(variables.$black, 0.75);
 
   &:after {
     content: '';
