@@ -11,7 +11,7 @@ const CardBack = ({ card }) => {
   return (
     <div
       className={`card-select card-select--${card}`}
-      style={{ ...cardDimensions(card), border: '1px solid black' }}
+      style={{ ...cardDimensions(card) }}
       onClick={() => handleCardClick()}
     />
   );

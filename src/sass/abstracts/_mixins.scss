@@ -41,14 +41,17 @@
   }
 
   &:hover {
-    transform: rotate(-$deg);
+    // Back
+    transform: rotate(-$deg); // Moves -deg (both pseudos will moves -deg as well)
 
+    // Middle
     &:before {
-      transform: rotate($deg);
+      transform: rotate($deg); // Moves -deg from above, but moving +deg offsets and it ends up staying still
     }
 
+    // Front
     &:after {
-      transform: rotate($deg * 2);
+      transform: rotate($deg * 2); // Moves -deg and +(deg * 2), so from starting position it practically just moves +deg
     }
   }
 }

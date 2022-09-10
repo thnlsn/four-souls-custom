@@ -34,10 +34,10 @@
 
 .app-content {
   border: 2px dotted rgba(153, 205, 50, 0.4); //! REMOVE !!!!!! TESTING !!!!!!
-  //height: 80rem;
+  // height: 80rem;
   padding: 2rem;
 
-  //For the clickable backs
+  // For the clickable backs
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -45,13 +45,17 @@
 }
 
 .card-select {
-  //border: 2px dotted rgba(137, 43, 226, 0.5); //! REMOVE !!!!!! TESTING !!!!!!
+  // border: 2px dotted rgba(137, 43, 226, 0.5); //! REMOVE !!!!!! TESTING !!!!!!
   background-size: cover;
   border-radius: variables.$card-radius;
   box-shadow: variables.$card-shadow;
   cursor: pointer;
 
-  border: 1px solid black;
+  &,
+  &:before,
+  &:after {
+    //border: 1px solid var(--color-black)
+  }
 
   &--char {
     @include mixins.card('char', variables.$card-deg);
