@@ -1,6 +1,7 @@
 @use '../abstracts/variables' as variables;
 
-@mixin cardPseudos($card, $deg) {
+// For the :before & :after pseudo elements on each card
+@mixin cardPseudos($card) {
   content: '';
   background-size: cover;
   border-radius: variables.$card-radius;
@@ -14,6 +15,7 @@
   box-shadow: variables.$card-shadow;
 }
 
+// Card tolt hover effect
 @mixin card($card, $deg) {
   content: '';
   transform: rotate(0);
@@ -23,24 +25,28 @@
   position: relative;
   transition: transform 0.2s;
 
+  // the card on the bottom of the stack
   &:before {
     background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
       url('../assets/cards/backs/' + $card + '.png');
     transition: transform 0.15s;
-    @include cardPseudos($card, ($deg / 2));
+    @include cardPseudos($card);
   }
-  // :after appears on top, so don't darken the image
+
+  // the card on the top of the stack
   &:after {
     background-image: url('../assets/cards/backs/' + $card + '.png');
-    transition: transform 0.1s;
-    @include cardPseudos($card, $deg);
+    transition: transform 0.1s; // Make it slightly faster than the card on the bottom for a bouncy effect
+    @include cardPseudos($card); // We want to tilt the card slightly to the left
   }
 
   &:hover {
     transform: rotate(-$deg);
+
     &:before {
       transform: rotate($deg);
     }
+
     &:after {
       transform: rotate($deg * 2);
     }

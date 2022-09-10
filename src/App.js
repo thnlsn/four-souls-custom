@@ -2,7 +2,7 @@
 import logo from './assets/images/FourSoulsLogo.png';
 
 //* Components
-import Back from './components/cardBack';
+import CardBack from './components/CardBack';
 
 function App() {
   return (
@@ -20,13 +20,13 @@ function App() {
         <div className='app-header__right'>right</div>
       </div>
       <div className='app-content'>
-        <Back card='char' />
-        <Back card='eter' />
-        <Back card='tres' />
-        <Back card='loot' />
-        <Back card='mons' />
-        <Back card='room' />
-        <Back card='soul' />
+        <CardBack card='char' />
+        <CardBack card='eter' />
+        <CardBack card='tres' />
+        <CardBack card='loot' />
+        <CardBack card='mons' />
+        <CardBack card='room' />
+        <CardBack card='soul' />
       </div>
     </div>
   );

@@ -1,7 +1,9 @@
 import React from 'react';
 import backs from '../assets/cards/backs';
+import { cardDimensions } from '../utils/helpers';
 
-const cardBack = ({ card }) => {
+const CardBack = ({ card }) => {
+
   const handleCardClick = () => {
     console.log(`Clicked ${card} card back`);
   };
@@ -9,13 +11,10 @@ const cardBack = ({ card }) => {
   return (
     <div
       className={`card-select card-select--${card}`}
-      style={{
-        width: card !== 'room' ? '184px' : '251px',
-        height: card !== 'room' ? '251px' : '184px',
-      }}
+      style={{ ...cardDimensions(card), border: '1px solid black' }}
       onClick={() => handleCardClick()}
     />
   );
 };
 
-export default cardBack;
+export default CardBack;

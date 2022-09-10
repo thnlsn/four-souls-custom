@@ -26,6 +26,7 @@
     width: 40rem;
     // z-index: 10;
   }
+
   &__title {
     margin-top: -4.2rem;
   }
@@ -50,24 +51,32 @@
   box-shadow: variables.$card-shadow;
   cursor: pointer;
 
+  border: 1px solid black;
+
   &--char {
     @include mixins.card('char', variables.$card-deg);
   }
+
   &--eter {
     @include mixins.card('eter', variables.$card-deg);
   }
+
   &--loot {
     @include mixins.card('loot', variables.$card-deg);
   }
+
   &--mons {
     @include mixins.card('mons', variables.$card-deg);
   }
+
   &--room {
     @include mixins.card('room', variables.$card-deg);
   }
+
   &--soul {
     @include mixins.card('soul', variables.$card-deg);
   }
+
   &--tres {
     @include mixins.card('tres', variables.$card-deg);
   }
