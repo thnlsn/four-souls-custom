@@ -21,48 +21,51 @@ html {
 }
 
 //? LOCAL VARIABLES
-$negativeMargin: 2rem; //~ Why is this here?
+$negativeMargin: 2rem; //~ Use to remove the extra border behind the isaac room backround image
 
 body {
   // Set the default font styles, colors, etc.
   background-color: var(--color-black);
   color: var(--color-white);
-  border-image-source: url('https://foursouls.com/wp-content/uploads/2021/08/FourSoulsPageBorderV5.png');
+  border-image-source: url('/src/assets/images/FourSoulsBorder.png');
   border-image-width: 156px 104px; //! Remove this at really thin viewports
   border-image-repeat: stretch repeat;
   border-image-slice: 156 104 156 fill;
-  overflow-x: hidden;
+  overflow: hidden;
   //width: calc(100vw + ($negativeMargin * 2));
+  //min-height: 100vh;
+
+  // So that the background doesn't have too much border
   min-height: calc(100vh + ($negativeMargin * 2));
-  margin: -$negativeMargin;
+  margin: -$negativeMargin 0 -$negativeMargin 0;
 }
 
 .App {
   //width: calc(100vw + ($negativeMargin * 2));
-  min-height: calc(100vh + ($negativeMargin * 2));
+  min-height: calc(100vh);
   background: #2b1e1d40;
   backdrop-filter: blur(2px);
   padding: 11.5rem 12rem;
 
-  //! Test border for sizing
-  //@debug&:after {
-  //! REMOVE !!!!!! TESTING !!!!!!
-  //content: ''; //! REMOVE !!!!!! TESTING !!!!!!
-  //position: absolute; //! REMOVE !!!!!! TESTING !!!!!!
-  ////width: calc(100vw + 4rem - 23.5rem);
-  ////min-height: calc(100vh + 4rem - 21rem);
-  ////border: 2px dotted rgba(255, 255, 255, 0.5);
-  ////left: 12rem;
-  ////top: 11.5rem;
+  // ! Test border for sizing
+  // @debug&:after {
+  // ! REMOVE !!!!!! TESTING !!!!!!
+  content: ''; //! REMOVE !!!!!! TESTING !!!!!!
+  position: absolute; //! REMOVE !!!!!! TESTING !!!!!!
+  //width: calc(100vw + 4rem - 23.5rem);
+  //min-height: calc(100vh + 4rem - 21rem);
+  //border: 2px dotted rgba(255, 255, 255, 0.5);
+  //left: 12rem;
+  //top: 11.5rem;
 
-  //left: 12rem; //! REMOVE !!!!!! TESTING !!!!!!
-  //top: 11.5rem; //! REMOVE !!!!!! TESTING !!!!!!
-  //width: calc(
-  //100vw + ($negativeMargin * 2) - 24rem
-  //); //! REMOVE !!!!!! TESTING !!!!!!
-  //min-height: calc(
-  //100vh + ($negativeMargin * 2) - 23rem
-  //); //! REMOVE !!!!!! TESTING !!!!!!
-  //border: 2px dotted rgba(255, 255, 255, 0.5); //! REMOVE !!!!!! TESTING !!!!!!
-  //}
+  // left: 12rem; //! REMOVE !!!!!! TESTING !!!!!!
+  // top: 11.5rem; //! REMOVE !!!!!! TESTING !!!!!!
+  // width: calc(
+  // 100vw + ($negativeMargin * 2) - 24rem
+  // ); //! REMOVE !!!!!! TESTING !!!!!!
+  // min-height: calc(
+  // 100vh + ($negativeMargin * 2) - 23rem
+  // ); //! REMOVE !!!!!! TESTING !!!!!!
+  // border: 2px dotted rgba(255, 255, 255, 0.5); //! REMOVE !!!!!! TESTING !!!!!!
+  // }
 }

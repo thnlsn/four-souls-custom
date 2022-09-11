@@ -25,20 +25,22 @@ html input:focus {
 body {
   background-color: var(--color-black);
   color: var(--color-white);
-  border-image-source: url("https://foursouls.com/wp-content/uploads/2021/08/FourSoulsPageBorderV5.png");
+  border-image-source: url("/src/assets/images/FourSoulsBorder.png");
   border-image-width: 156px 104px;
   border-image-repeat: stretch repeat;
   border-image-slice: 156 104 156 fill;
-  overflow-x: hidden;
+  overflow: hidden;
   min-height: calc(100vh + 4rem);
-  margin: -2rem;
+  margin: -2rem -2rem 0;
 }
 
 .App {
-  min-height: calc(100vh + 4rem);
+  min-height: 100vh;
   background: #2b1e1d40;
   backdrop-filter: blur(2px);
   padding: 11.5rem 12rem;
+  content: "";
+  position: absolute;
 }
 
 @font-face {
