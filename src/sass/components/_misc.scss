@@ -51,11 +51,11 @@
   box-shadow: variables.$card-shadow;
   cursor: pointer;
 
-  &,
-  &:before,
-  &:after {
-    border: 1px solid var(--color-black);
-  }
+  // &,
+  // &:before,
+  // &:after {
+  //   border: 1px solid var(--color-black);
+  // }
 
   &--char {
     @include mixins.card('char', variables.$card-deg);
