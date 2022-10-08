@@ -30,12 +30,11 @@ body {
   border-image-repeat: stretch repeat;
   border-image-slice: 156 104 156 fill;
   overflow: hidden;
-  min-height: calc(100vh + 4rem);
-  margin: -2rem -2rem 0;
 }
 
 .App {
-  min-height: 100vh;
+  overflow: scroll;
+  height: 100vh;
   background: #2b1e1d40;
   backdrop-filter: blur(2px);
   padding: 11.5rem 12rem;

@@ -36,13 +36,15 @@ body {
   //min-height: 100vh;
 
   // So that the background doesn't have too much border
-  min-height: calc(100vh + ($negativeMargin * 2));
-  margin: -$negativeMargin 0 -$negativeMargin 0;
+  //min-height: calc(100vh + ($negativeMargin * 2));
+  //margin: -$negativeMargin 0 -$negativeMargin 0;
 }
 
 .App {
   //width: calc(100vw + ($negativeMargin * 2));
-  min-height: calc(100vh);
+  overflow: scroll;
+  height: 100vh;
+  //min-height: calc(100vh);
   background: #2b1e1d40;
   backdrop-filter: blur(2px);
   padding: 11.5rem 12rem;
