@@ -39,8 +39,6 @@ body {
   background: #2b1e1d40;
   backdrop-filter: blur(2px);
   padding: 11.5rem 12rem;
-  content: "";
-  position: absolute;
 }
 
 @font-face {
@@ -398,6 +396,293 @@ body {
   transform: rotate(3deg);
 }
 .card-select--tres:hover:after {
+  transform: rotate(6deg);
+}
+.card-select--tres {
+  content: "";
+  transform: rotate(0);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/cards/backs/tres.png");
+  background-size: cover;
+  position: relative;
+  transition: transform 0.2s;
+}
+.card-select--tres:before {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../assets/cards/backs/tres.png");
+  transition: transform 0.15s;
+  content: "";
+  background-size: cover;
+  border-radius: 7px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1000;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.card-select--tres:after {
+  background-image: url("../assets/cards/backs/tres.png");
+  transition: transform 0.1s;
+  content: "";
+  background-size: cover;
+  border-radius: 7px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1000;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.card-select--tres:hover {
+  transform: rotate(-3deg);
+}
+.card-select--tres:hover:before {
+  transform: rotate(3deg);
+}
+.card-select--tres:hover:after {
+  transform: rotate(6deg);
+}
+.card-select--isa {
+  content: "";
+  transform: rotate(0);
+  background: linear-gradient(rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64)), url("../assets/cards/backs/mons.png");
+  background-size: cover;
+  position: relative;
+  transition: transform 0.2s;
+}
+.card-select--isa:before {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../assets/cards/backs/mons.png");
+  transition: transform 0.15s;
+  content: "";
+  background-size: cover;
+  border-radius: 7px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1000;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.card-select--isa:after {
+  background-image: url("../assets/cards/backs/isa.png");
+  transition: transform 0.1s;
+  content: "";
+  background-size: cover;
+  border-radius: 7px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1000;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.card-select--isa {
+  transform: rotate(-3deg);
+}
+.card-select--isa:before {
+  transform: rotate(3deg);
+}
+.card-select--isa:after {
+  transform: rotate(6deg);
+}
+.card-select--mom {
+  content: "";
+  transform: rotate(0);
+  background: linear-gradient(rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64)), url("../assets/cards/backs/mons.png");
+  background-size: cover;
+  position: relative;
+  transition: transform 0.2s;
+}
+.card-select--mom:before {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../assets/cards/backs/mons.png");
+  transition: transform 0.15s;
+  content: "";
+  background-size: cover;
+  border-radius: 7px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1000;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.card-select--mom:after {
+  background-image: url("../assets/cards/backs/mom.png");
+  transition: transform 0.1s;
+  content: "";
+  background-size: cover;
+  border-radius: 7px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1000;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.card-select--mom {
+  transform: rotate(-3deg);
+}
+.card-select--mom:before {
+  transform: rotate(3deg);
+}
+.card-select--mom:after {
+  transform: rotate(6deg);
+}
+.card-select--bum {
+  content: "";
+  transform: rotate(0);
+  background: linear-gradient(rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64)), url("../assets/cards/backs/mons.png");
+  background-size: cover;
+  position: relative;
+  transition: transform 0.2s;
+}
+.card-select--bum:before {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../assets/cards/backs/mons.png");
+  transition: transform 0.15s;
+  content: "";
+  background-size: cover;
+  border-radius: 7px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1000;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.card-select--bum:after {
+  background-image: url("../assets/cards/backs/bum.png");
+  transition: transform 0.1s;
+  content: "";
+  background-size: cover;
+  border-radius: 7px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1000;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.card-select--bum {
+  transform: rotate(-3deg);
+}
+.card-select--bum:before {
+  transform: rotate(3deg);
+}
+.card-select--bum:after {
+  transform: rotate(6deg);
+}
+.card-select--lit {
+  content: "";
+  transform: rotate(0);
+  background: linear-gradient(rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64)), url("../assets/cards/backs/mons.png");
+  background-size: cover;
+  position: relative;
+  transition: transform 0.2s;
+}
+.card-select--lit:before {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../assets/cards/backs/mons.png");
+  transition: transform 0.15s;
+  content: "";
+  background-size: cover;
+  border-radius: 7px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1000;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.card-select--lit:after {
+  background-image: url("../assets/cards/backs/lit.png");
+  transition: transform 0.1s;
+  content: "";
+  background-size: cover;
+  border-radius: 7px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1000;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.card-select--lit {
+  transform: rotate(-3deg);
+}
+.card-select--lit:before {
+  transform: rotate(3deg);
+}
+.card-select--lit:after {
+  transform: rotate(6deg);
+}
+.card-select--hus {
+  content: "";
+  transform: rotate(0);
+  background: linear-gradient(rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64)), url("../assets/cards/backs/mons.png");
+  background-size: cover;
+  position: relative;
+  transition: transform 0.2s;
+}
+.card-select--hus:before {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../assets/cards/backs/mons.png");
+  transition: transform 0.15s;
+  content: "";
+  background-size: cover;
+  border-radius: 7px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1000;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.card-select--hus:after {
+  background-image: url("../assets/cards/backs/hus.png");
+  transition: transform 0.1s;
+  content: "";
+  background-size: cover;
+  border-radius: 7px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1000;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.card-select--hus {
+  transform: rotate(-3deg);
+}
+.card-select--hus:before {
+  transform: rotate(3deg);
+}
+.card-select--hus:after {
+  transform: rotate(6deg);
+}
+.card-select--del {
+  content: "";
+  transform: rotate(0);
+  background: linear-gradient(rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64)), url("../assets/cards/backs/mons.png");
+  background-size: cover;
+  position: relative;
+  transition: transform 0.2s;
+}
+.card-select--del:before {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../assets/cards/backs/mons.png");
+  transition: transform 0.15s;
+  content: "";
+  background-size: cover;
+  border-radius: 7px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1000;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.card-select--del:after {
+  background-image: url("../assets/cards/backs/del.png");
+  transition: transform 0.1s;
+  content: "";
+  background-size: cover;
+  border-radius: 7px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1000;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.card-select--del {
+  transform: rotate(-3deg);
+}
+.card-select--del:before {
+  transform: rotate(3deg);
+}
+.card-select--del:after {
   transform: rotate(6deg);
 }
 

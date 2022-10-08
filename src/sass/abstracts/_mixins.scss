@@ -15,7 +15,7 @@
   box-shadow: variables.$card-shadow;
 }
 
-// Card tolt hover effect
+// Card tilt hover effect
 @mixin card($card, $deg) {
   content: '';
   transform: rotate(0);
@@ -52,6 +52,44 @@
     // Front
     &:after {
       transform: rotate($deg * 2); // Moves -deg and +(deg * 2), so from starting position it practically just moves +deg
+    }
+  }
+}
+
+@mixin cardDiff($card, $back, $deg) {
+  content: '';
+  transform: rotate(0);
+  background: linear-gradient(rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64)),
+    url('../assets/cards/backs/' + $back + '.png');
+  background-size: cover;
+  position: relative;
+  transition: transform 0.2s;
+
+  &:before {
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+      url('../assets/cards/backs/' + $back + '.png');
+    transition: transform 0.15s;
+    @include cardPseudos($card);
+  }
+
+  &:after {
+    background-image: url('../assets/cards/backs/' + $card + '.png');
+    transition: transform 0.1s; // Make it slightly faster than the card on the bottom for a bouncy effect
+    @include cardPseudos($card); // We want to tilt the card slightly to the left
+  }
+
+  & {
+    // Back
+    transform: rotate(-$deg);
+
+    // Middle
+    &:before {
+      transform: rotate($deg);
+    }
+
+    // Front
+    &:after {
+      transform: rotate($deg * 2);
     }
   }
 }

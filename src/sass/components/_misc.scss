@@ -83,4 +83,32 @@
   &--tres {
     @include mixins.card('tres', variables.$card-deg);
   }
+
+  &--tres {
+    @include mixins.card('tres', variables.$card-deg);
+  }
+
+  &--isa {
+    @include mixins.cardDiff('isa', 'mons', variables.$card-deg);
+  }
+
+  &--mom {
+    @include mixins.cardDiff('mom', 'mons', variables.$card-deg);
+  }
+
+  &--bum {
+    @include mixins.cardDiff('bum', 'mons', variables.$card-deg);
+  }
+
+  &--lit {
+    @include mixins.cardDiff('lit', 'mons', variables.$card-deg);
+  }
+
+  &--hus {
+    @include mixins.cardDiff('hus', 'mons', variables.$card-deg);
+  }
+
+  &--del {
+    @include mixins.cardDiff('del', 'mons', variables.$card-deg);
+  }
 }

@@ -27,6 +27,12 @@ function App() {
         <CardBack card='mons' />
         <CardBack card='room' />
         <CardBack card='soul' />
+        {/*        <CardBack card='isa' />
+        <CardBack card='mom' />
+        <CardBack card='bum' />
+        <CardBack card='lit' />
+        <CardBack card='hus' />
+        <CardBack card='del' />*/}
       </div>
     </div>
   );
