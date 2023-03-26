@@ -12,7 +12,7 @@ const CardEdit = () => {
 
   return (
     <div className='app-content card-editor-content'>
-      <div
+      <canvas
         className='card-display'
         style={{
           width: getDimensions(cardType, 2).width,
@@ -22,7 +22,7 @@ const CardEdit = () => {
           //objectFit: 'contain',
           //backgroundSize: 'contain',
         }}
-      ></div>
+      ></canvas>
       <div className='card-form'>
         <TextInput label='name' state={name} changeState={changeName} />
         <TextInput label='image' state={image} changeState={changeImage} />
