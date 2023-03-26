@@ -26,6 +26,7 @@
     width: 40rem;
     // z-index: 10;
   }
+
   &__title {
     margin-top: -4.2rem;
   }
@@ -58,35 +59,35 @@
     border-radius: variables.$card-radius;
     box-shadow: variables.$card-shadow;
 
-    &--char {
-      @include mixins.card('char');
+    /*     &--char {
+      @include mixins.card('char', 0);
     }
     &--eter {
-      @include mixins.card('eter');
+      @include mixins.card('eter', 0);
     }
     &--loot {
-      @include mixins.card('loot');
+      @include mixins.card('loot', 0);
     }
     &--mons {
-      @include mixins.card('mons');
+      @include mixins.card('mons', 0);
     }
     &--room {
-      @include mixins.card('room');
+      @include mixins.card('room', 0);
     }
     &--soul {
-      @include mixins.card('soul');
+      @include mixins.card('soul', 0);
     }
     &--tres {
-      @include mixins.card('tres');
-    }
+      @include mixins.card('tres', 0);
+    } */
   }
 
-  &__text {
+  /*   &__text {
     //cursor: pointer;
     text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
       0px 18px 23px rgba(0, 0, 0, 0.1);
     transition: transform 0.05s;
-  }
+  } */
 
   &:hover > &__image {
     transform: rotate(-(variables.$card-deg));
@@ -97,10 +98,10 @@
       transform: rotate(variables.$card-deg * 2);
     }
   }
-  &:hover > &__text {
+  /*   &:hover > &__text {
     transform: scale(1.05);
     //transform: rotate(variables.$card-deg / 2);
-  }
+  } */
 }
 
 .card-editor-content {
@@ -137,32 +138,97 @@
   }
 }
 
-.card-form {
-  .card-form__input-box {
-    display: flex;
-    flex-direction: column;
+.card-form .card-form__input-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-form__input-label {
+  font-size: 2rem;
+  line-height: 0.75;
+  margin-left: 0.5rem;
+}
+
+/* &__input {
+  padding: 0.5rem;
+  border: 1px solid variables.$bone;
+  border-radius: 4px;
+  background-color: variables.$background;
+  color: var(--color-white);
+} */
+
+[type='text'] {
+}
+[type='number'] {
+}
+[type='checkbox'] {
+}
+[type='select'] {
+  // border: 2px dotted rgba(137, 43, 226, 0.5); //! REMOVE !!!!!! TESTING !!!!!!
+  background-size: cover;
+  border-radius: variables.$card-radius;
+  box-shadow: variables.$card-shadow;
+  cursor: pointer;
+
+  // &,
+  // &:before,
+  // &:after {
+  //   border: 1px solid var(--color-black);
+  // }
+
+  /*   &--char {
+    @include mixins.card('char', variables.$card-deg);
   }
 
-  .card-form__input-label {
-    font-size: 2rem;
-    line-height: 0.75;
-    margin-left: 0.5rem;
+  &--eter {
+    @include mixins.card('eter', variables.$card-deg);
   }
 
-  &__input {
-    padding: 0.5rem;
-    border: 1px solid variables.$bone;
-    border-radius: 4px;
-    background-color: variables.$background;
-    color: var(--color-white);
+  &--loot {
+    @include mixins.card('loot', variables.$card-deg);
   }
 
-  &[type='text'] {
+  &--mons {
+    @include mixins.card('mons', variables.$card-deg);
   }
-  &[type='number'] {
+
+  &--room {
+    @include mixins.card('room', variables.$card-deg);
   }
-  &[type='checkbox'] {
+
+  &--soul {
+    @include mixins.card('soul', variables.$card-deg);
   }
-  &[type='select'] {
+
+  &--tres {
+    @include mixins.card('tres', variables.$card-deg);
   }
+
+  &--tres {
+    @include mixins.card('tres', variables.$card-deg);
+  }
+
+  &--isa {
+    @include mixins.cardDiff('isa', 'mons', variables.$card-deg);
+  }
+
+  &--mom {
+    @include mixins.cardDiff('mom', 'mons', variables.$card-deg);
+  }
+
+  &--bum {
+    @include mixins.cardDiff('bum', 'mons', variables.$card-deg);
+  }
+
+  &--lit {
+    @include mixins.cardDiff('lit', 'mons', variables.$card-deg);
+  }
+
+  &--hus {
+    @include mixins.cardDiff('hus', 'mons', variables.$card-deg);
+  }
+
+  &--del {
+    @include mixins.cardDiff('del', 'mons', variables.$card-deg);
+  } */
 }
